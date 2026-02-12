@@ -56,16 +56,23 @@ This project uses a synthetic e-commerce transactional dataset spanning 12 month
 
 ### Entity Relationship Diagram (ERD)
 
-![ERD Diagram](https://github.com/ajaykjaiswar/Customer-Funnel-Retention-and-Revenue-Analysis/blob/main/images/erd.jpg)
-
-
+<p align="center">
+  <img src="images/ERD.PNG" width="750"/>
+  <br/>
+  <em>Entity Relationship Diagram (ERD)</em>
+</p>
 
 
 ## Executive Summary
 
 Customer behavior analysis using RFM segmentation reveals that revenue and churn are highly concentrated across customer segments. A small share of customers generates the majority of revenue with low churn, while a large portion of the customer base contributes disproportionately to churn with limited revenue impact. Statistical testing confirms that these patterns are significant and not random, reinforcing the need for targeted, segment-based retention strategies.
 
-![Overview](https://github.com/ajaykjaiswar/Customer-Funnel-Retention-and-Revenue-Analysis/blob/main/images/Overview.PNG)
+<p align="center">
+  <img src="images/dashboard.png" width="800"/>
+  <br/>
+  <em>Customer Segmentation & Churn Dashboard</em>
+</p>
+
 
 ### Key Business Findings
 1. **Customer Lifecycle & Value Segmentation**
@@ -90,9 +97,16 @@ Customer behavior analysis using RFM segmentation reveals that revenue and churn
 
 
 ## Insights Deep Dive 
-[View Detailed Analysis (PDF)](https://github.com/ajaykjaiswar/Customer-Funnel-Retention-and-Revenue-Analysis/blob/main/Report.pdf)
+[View Detailed Analysis (Jupyter)](https://github.com/ajaykjaiswar/Customer-Segmentation-Churn-Revenue-Analytics/blob/main/analysis/Analysis.ipynb) / [(Report PDF)](https://github.com/ajaykjaiswar/Customer-Segmentation-Churn-Revenue-Analytics/blob/main/RetailPlus_Report.pdf)
 
 ### Customer Lifecycle & Value Segmentation
+
+<p align="center">
+  <img src="images/Customer%20Segmentation.png" width="700"/>
+  <br/>
+  <em>Customer Segmentation Overview</em>
+</p>
+
 
 - High Value customers represent ~19% of the customer base but contribute ~48% of total revenue, confirming strong revenue concentration.
 -	Loyal customers form ~21% of customers and contribute ~22% of revenue, indicating stable repeat behavior but moderate spend.
@@ -102,6 +116,13 @@ Customer behavior analysis using RFM segmentation reveals that revenue and churn
 
 
 ### Customer Churn Risk Assessment
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ajaykjaiswar/Customer-Segmentation-Churn-Revenue-Analytics/main/images/Churn%20vs%20Revenue.png" width="700"/>
+  <br/>
+  <em>Churn vs Revenue Trend Analysis</em>
+</p>
+
 
 - Lost and At Risk segments exhibit extremely high churn rates, indicating disengagement is strongly correlated with recency deterioration.
 -	High Value customers show very low churn (~6%), validating the effectiveness of current engagement for top customers.
@@ -194,7 +215,7 @@ The analysis demonstrates that revenue and churn are highly concentrated across 
 
 
 ## Data Preparation
-[View Data Preparation SQL](https://github.com/ajaykjaiswar/Customer-Funnel-Retention-and-Revenue-Analysis/blob/main/analysis/createsummarytable.sql)
+[View Data Preparation SQL](https://github.com/ajaykjaiswar/Customer-Segmentation-Churn-Revenue-Analytics/blob/main/analysis/consolidated_data.sql)
 
 - Consolidated datasets into a unified analytical table
 - Filtered invalid, duplicate and non-conversion events to ensure data quality
@@ -207,7 +228,7 @@ The analysis demonstrates that revenue and churn are highly concentrated across 
   
 ## Methods
 
-- Data cleaning and enrichment using SQL views.
+- Data loading and cleaning and enrichment using SQL views. [View Data  Loading and Cleaning](https://github.com/ajaykjaiswar/Customer-Segmentation-Churn-Revenue-Analytics/blob/main/analysis/Loadingdata%2BCleaning.sql)
 - Customer Segmentation: Customers were segmented using Recency, Frequency and Monetary (RFM) metrics to classify them into High Value, Loyal, Potential, At Risk and Lost groups.
 - Churn Definition: Churn was defined based on transaction inactivity within a specified period and calculated at customer level.
 - Revenue Analysis: Total revenue, revenue share and average revenue per customer were computed to assess revenue concentration and exposure across segments.
