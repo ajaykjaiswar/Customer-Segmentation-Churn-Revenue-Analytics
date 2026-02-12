@@ -215,7 +215,7 @@ The analysis demonstrates that revenue and churn are highly concentrated across 
 
 
 ## Data Preparation
-[View Data Preparation SQL](https://github.com/ajaykjaiswar/Customer-Segmentation-Churn-Revenue-Analytics/blob/main/analysis/consolidated_data.sql)
+[View Data Loading and Cleaning SQL)](https://github.com/ajaykjaiswar/Customer-Segmentation-Churn-Revenue-Analytics/blob/main/analysis/Loadingdata%2BCleaning.sql) / [Consolidated Table SQL](https://github.com/ajaykjaiswar/Customer-Segmentation-Churn-Revenue-Analytics/blob/main/analysis/consolidated_data.sql)
 
 - Consolidated datasets into a unified analytical table
 - Filtered invalid, duplicate and non-conversion events to ensure data quality
@@ -228,7 +228,7 @@ The analysis demonstrates that revenue and churn are highly concentrated across 
   
 ## Methods
 
-- Data loading and cleaning and enrichment using SQL views. [View Data  Loading and Cleaning](https://github.com/ajaykjaiswar/Customer-Segmentation-Churn-Revenue-Analytics/blob/main/analysis/Loadingdata%2BCleaning.sql)
+- Data loading and cleaning and enrichment using SQL views.
 - Customer Segmentation: Customers were segmented using Recency, Frequency and Monetary (RFM) metrics to classify them into High Value, Loyal, Potential, At Risk and Lost groups.
 - Churn Definition: Churn was defined based on transaction inactivity within a specified period and calculated at customer level.
 - Revenue Analysis: Total revenue, revenue share and average revenue per customer were computed to assess revenue concentration and exposure across segments.
