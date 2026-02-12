@@ -1,3 +1,5 @@
+-- Consolidating Datasets into a Unified Analytical Table
+
 Create View enriched_data as (
 with initial_table as (
 
@@ -43,11 +45,11 @@ on it.Mnth = dc.Month and it.Product_Category = dc.Product_Category)
 
 Select * from transactional_data);
 
+-- Created a Complete Transactional Level Data
 
 Create table transactions as 
 Select * from enriched_data;
 
-Select * from transactions
 
 
 
